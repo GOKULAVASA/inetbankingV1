@@ -29,6 +29,8 @@ WebElement txtPassword;
 @FindBy(name="btnLogin")
 WebElement btnLogin;
 
+@FindBy(xpath="/html/body/div[3]/div/ul/li[15]/a")
+WebElement Loggingout;
 
 public void setUserName(String name)
 {
@@ -49,7 +51,9 @@ public void Clicksubmit()
 }
 
 
-
+public void logout() {
+	Loggingout.click();
+}
 
 
 }

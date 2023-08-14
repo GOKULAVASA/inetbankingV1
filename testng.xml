@@ -5,9 +5,11 @@
 <listener class-name="com.inetbanking.utilities.Reporting"/>
 </listeners>
   <test thread-count="5" name="banking Test">
-  <parameter name="browser" value="msedge"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.inetbanking.testcases.TC_LoginTest_001"/>
+        <class name="com.inetbanking.testcases.TC_LoginDDT_002"/>
+        <class name="com.inetbanking.testcases.TC_ADDCUSTOMER_003"/>
     </classes>
     
   </test> <!-- Test -->
